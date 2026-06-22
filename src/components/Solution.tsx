@@ -68,7 +68,11 @@ const Solution = () => {
                 className="flex gap-4 rounded-2xl bg-[#F5F5F5] p-5"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm ring-1 ring-black/5">
-                  <Icon name={s.icon} size={22} className="text-brand" />
+                  <Icon
+                    name={s.icon}
+                    size={22}
+                    className="animate-icon-breathe text-brand"
+                  />
                 </span>
                 <div>
                   <h3 className="font-display text-lg font-bold text-[#1a1f1c]">
@@ -99,7 +103,7 @@ const Solution = () => {
             href={MAX_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-8 inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+            className="group mt-8 inline-flex animate-btn-glow items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-2xl hover:shadow-brand/40"
           >
             Хочу такой
             <Icon

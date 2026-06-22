@@ -33,7 +33,7 @@ const Hero = () => {
               href={MAX_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+              className="group inline-flex animate-btn-glow items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-2xl hover:shadow-brand/40"
             >
               Узнать стоимость
               <Icon
@@ -57,7 +57,11 @@ const Hero = () => {
                 className="flex items-center gap-2.5 text-sm font-semibold text-[#1a1f1c]"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-black/5">
-                  <Icon name={f.icon} size={18} className="text-brand" />
+                  <Icon
+                    name={f.icon}
+                    size={18}
+                    className="animate-icon-breathe text-brand"
+                  />
                 </span>
                 {f.label}
               </div>
@@ -77,7 +81,11 @@ const Hero = () => {
         <div className="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-auto">
           <div className="inline-flex items-center gap-3 rounded-2xl bg-white/95 px-5 py-3.5 shadow-xl backdrop-blur-sm ring-1 ring-black/5">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand/10">
-              <Icon name="MapPin" size={20} className="text-brand" />
+              <Icon
+                name="MapPin"
+                size={20}
+                className="animate-icon-float text-brand"
+              />
             </span>
             <span className="text-sm font-bold text-[#1a1f1c]">
               Установлено 120+ хозблоков по Приморью

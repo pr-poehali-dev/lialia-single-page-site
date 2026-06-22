@@ -46,7 +46,9 @@ const renderCell = (cell: string | { ok: boolean; text: string }) => {
       <Icon
         name={cell.ok ? "Check" : "X"}
         size={16}
-        className={cell.ok ? "text-brand" : "text-red-400"}
+        className={`animate-icon-breathe ${
+          cell.ok ? "text-brand" : "text-red-400"
+        }`}
       />
       {cell.text}
     </span>

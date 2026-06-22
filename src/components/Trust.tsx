@@ -64,7 +64,11 @@ const Trust = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-[#1a1f1c]">
-                <Icon name="MapPin" size={14} className="text-brand" />
+                <Icon
+                  name="MapPin"
+                  size={14}
+                  className="animate-icon-float text-brand"
+                />
                 {w.district}
               </div>
             </div>
@@ -72,7 +76,7 @@ const Trust = () => {
         </div>
 
         <div className="mt-10 text-center">
-          <button className="group inline-flex items-center gap-2 rounded-xl bg-white/10 px-6 py-3.5 text-sm font-bold text-white ring-1 ring-white/20 transition-colors hover:bg-white/15">
+          <button className="group inline-flex items-center gap-2 rounded-xl bg-white/10 px-6 py-3.5 text-sm font-bold text-white ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20 hover:shadow-lg hover:shadow-white/10">
             Смотреть все работы
             <Icon
               name="ArrowRight"
@@ -109,7 +113,8 @@ const Trust = () => {
                     key={i}
                     name="Star"
                     size={16}
-                    className="fill-[#FFB400] text-[#FFB400]"
+                    className="animate-icon-breathe fill-[#FFB400] text-[#FFB400]"
+                    style={{ animationDelay: `${i * 0.2}s` }}
                   />
                 ))}
               </div>

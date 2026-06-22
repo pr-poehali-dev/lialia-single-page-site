@@ -26,16 +26,17 @@ const Included = () => {
 
         <div className="mt-14 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <ul className="space-y-3.5">
-            {items.map((item) => (
+            {items.map((item, i) => (
               <li
                 key={item}
-                className="flex items-start gap-3.5 rounded-xl bg-[#F8F8F8] px-5 py-4"
+                className="flex items-start gap-3.5 rounded-xl bg-[#F8F8F8] px-5 py-4 transition-colors hover:bg-brand/[0.06]"
               >
                 <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand">
                   <Icon
                     name="Check"
                     size={15}
-                    className="text-brand-foreground"
+                    className="animate-icon-breathe text-brand-foreground"
+                    style={{ animationDelay: `${i * 0.25}s` }}
                   />
                 </span>
                 <span className="text-[15px] leading-relaxed text-[#1a1f1c]">

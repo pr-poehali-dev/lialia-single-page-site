@@ -38,13 +38,18 @@ const Benefits = () => {
     <section id="benefits" className="w-full scroll-mt-20 bg-[#F8F8F8] px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {benefits.map((b) => (
+          {benefits.map((b, i) => (
             <div
               key={b.title}
-              className="rounded-2xl bg-white p-7 shadow-[0_4px_24px_rgba(0,0,0,0.05)] ring-1 ring-black/[0.03] transition-all hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.09)]"
+              className="group rounded-2xl bg-white p-7 shadow-[0_4px_24px_rgba(0,0,0,0.05)] ring-1 ring-black/[0.03] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.09)]"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand/[0.07]">
-                <Icon name={b.icon} size={26} className="text-brand" />
+              <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand/[0.07] transition-colors group-hover:bg-brand/15">
+                <Icon
+                  name={b.icon}
+                  size={26}
+                  className="animate-icon-breathe text-brand"
+                  style={{ animationDelay: `${i * 0.4}s` }}
+                />
               </span>
               <h3 className="mt-5 font-display text-lg font-bold text-[#1a1f1c]">
                 {b.title}

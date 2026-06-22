@@ -34,19 +34,24 @@ const FinalCta = () => {
           href={MAX_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="group mt-10 inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-9 py-5 text-lg font-bold text-white shadow-xl shadow-[#25D366]/25 transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#25D366]/40"
+          className="group mt-10 inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-9 py-5 text-lg font-bold text-white shadow-xl shadow-[#25D366]/30 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.04] hover:shadow-2xl hover:shadow-[#25D366]/60"
         >
-          <Icon name="MessageCircle" size={24} />
+          <Icon name="MessageCircle" size={24} className="animate-icon-float" />
           Написать в MAX
         </a>
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-8">
-          {guarantees.map((g) => (
+          {guarantees.map((g, i) => (
             <span
               key={g}
               className="inline-flex items-center gap-2 text-sm text-gray-300"
             >
-              <Icon name="Check" size={16} className="text-[#9fbfa9]" />
+              <Icon
+                name="Check"
+                size={16}
+                className="animate-icon-breathe text-[#9fbfa9]"
+                style={{ animationDelay: `${i * 0.4}s` }}
+              />
               {g}
             </span>
           ))}

@@ -18,7 +18,11 @@ const Header = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5 sm:px-10">
         <a href="#" className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand">
-            <Icon name="Home" size={18} className="text-brand-foreground" />
+            <Icon
+              name="Home"
+              size={18}
+              className="animate-icon-float text-brand-foreground"
+            />
           </span>
           <span className="font-display text-lg font-extrabold tracking-tight text-[#1a1f1c]">
             LEGKO
@@ -41,9 +45,9 @@ const Header = () => {
           href={MAX_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-sm font-bold text-brand-foreground transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand/25 lg:inline-flex"
+          className="hidden animate-btn-glow items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-sm font-bold text-brand-foreground transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:shadow-xl hover:shadow-brand/40 lg:inline-flex"
         >
-          <Icon name="MessageCircle" size={16} />
+          <Icon name="MessageCircle" size={16} className="animate-icon-float" />
           Узнать цену
         </a>
 

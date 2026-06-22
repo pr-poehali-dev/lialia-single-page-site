@@ -84,9 +84,9 @@ const Colors = () => {
             href={MAX_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+            className="group inline-flex animate-btn-glow items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-2xl hover:shadow-brand/40"
           >
-            <Icon name="MessageCircle" size={20} />
+            <Icon name="MessageCircle" size={20} className="animate-icon-float" />
             Хочу другой цвет — уточнить в MAX
             <Icon
               name="ArrowRight"

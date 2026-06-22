@@ -30,7 +30,11 @@ const Pain = () => {
               className="group rounded-2xl bg-white/[0.04] p-8 ring-1 ring-white/10 transition-colors hover:bg-white/[0.07]"
             >
               <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10">
-                <Icon name={p.icon} size={26} className="text-[#9fbfa9]" />
+                <Icon
+                  name={p.icon}
+                  size={26}
+                  className="animate-icon-sway text-[#9fbfa9]"
+                />
               </span>
               <p className="mt-6 text-lg leading-relaxed text-gray-300">
                 «{p.text}»
