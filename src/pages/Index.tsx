@@ -4,6 +4,7 @@ import Solution from "@/components/Solution";
 import Benefits from "@/components/Benefits";
 import Included from "@/components/Included";
 import Colors from "@/components/Colors";
+import Trust from "@/components/Trust";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Benefits />
       <Included />
       <Colors />
+      <Trust />
     </main>
   );
 };
