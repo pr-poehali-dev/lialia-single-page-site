@@ -5,6 +5,7 @@ import AboutModal from "@/components/AboutModal";
 
 const navLinks = [
   { href: "#product", label: "Хозблок" },
+  { href: "#catalog", label: "Каталог" },
   { href: "#benefits", label: "Преимущества" },
   { href: "#colors", label: "Цвета" },
   { href: "#works", label: "Работы" },
