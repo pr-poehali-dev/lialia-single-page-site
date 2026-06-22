@@ -19,9 +19,14 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Unbounded', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
 			},
 			colors: {
+				brand: {
+					DEFAULT: 'hsl(var(--brand))',
+					foreground: 'hsl(var(--brand-foreground))'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
