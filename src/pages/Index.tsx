@@ -5,6 +5,7 @@ import Benefits from "@/components/Benefits";
 import Included from "@/components/Included";
 import Colors from "@/components/Colors";
 import Trust from "@/components/Trust";
+import Comparison from "@/components/Comparison";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Included />
       <Colors />
       <Trust />
+      <Comparison />
     </main>
   );
 };
