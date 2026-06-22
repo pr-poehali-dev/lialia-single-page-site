@@ -7,6 +7,7 @@ import Colors from "@/components/Colors";
 import Trust from "@/components/Trust";
 import Comparison from "@/components/Comparison";
 import Faq from "@/components/Faq";
+import FinalCta from "@/components/FinalCta";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <Trust />
       <Comparison />
       <Faq />
+      <FinalCta />
     </main>
   );
 };
