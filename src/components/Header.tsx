@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 import { MAX_LINK } from "@/lib/links";
+import AboutModal from "@/components/AboutModal";
 
 const navLinks = [
   { href: "#product", label: "Хозблок" },
@@ -12,6 +13,7 @@ const navLinks = [
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-white/90 backdrop-blur-md">
@@ -39,6 +41,12 @@ const Header = () => {
               {l.label}
             </a>
           ))}
+          <button
+            onClick={() => setAboutOpen(true)}
+            className="text-sm font-semibold text-gray-600 transition-colors hover:text-brand"
+          >
+            О компании
+          </button>
         </nav>
 
         <a
@@ -73,6 +81,15 @@ const Header = () => {
                 {l.label}
               </a>
             ))}
+            <button
+              onClick={() => {
+                setOpen(false);
+                setAboutOpen(true);
+              }}
+              className="border-b border-black/5 py-3.5 text-left text-base font-semibold text-[#1a1f1c]"
+            >
+              О компании
+            </button>
             <a
               href={MAX_LINK}
               target="_blank"
@@ -86,6 +103,8 @@ const Header = () => {
           </nav>
         </div>
       )}
+
+      <AboutModal open={aboutOpen} onOpenChange={setAboutOpen} />
     </header>
   );
 };
