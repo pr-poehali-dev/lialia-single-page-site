@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Pain from "@/components/Pain";
 import Solution from "@/components/Solution";
 import Benefits from "@/components/Benefits";
+import Included from "@/components/Included";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <Pain />
       <Solution />
       <Benefits />
+      <Included />
     </main>
   );
 };
