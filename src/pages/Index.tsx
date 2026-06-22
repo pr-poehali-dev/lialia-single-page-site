@@ -6,6 +6,7 @@ import Included from "@/components/Included";
 import Colors from "@/components/Colors";
 import Trust from "@/components/Trust";
 import Comparison from "@/components/Comparison";
+import Faq from "@/components/Faq";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Colors />
       <Trust />
       <Comparison />
+      <Faq />
     </main>
   );
 };
