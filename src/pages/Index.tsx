@@ -3,6 +3,7 @@ import Pain from "@/components/Pain";
 import Solution from "@/components/Solution";
 import Benefits from "@/components/Benefits";
 import Included from "@/components/Included";
+import Colors from "@/components/Colors";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Solution />
       <Benefits />
       <Included />
+      <Colors />
     </main>
   );
 };
