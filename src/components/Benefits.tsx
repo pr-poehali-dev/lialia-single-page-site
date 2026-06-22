@@ -35,7 +35,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="w-full bg-[#F8F8F8] px-6 py-20 sm:px-10 lg:py-28">
+    <section id="benefits" className="w-full scroll-mt-20 bg-[#F8F8F8] px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((b) => (

@@ -34,7 +34,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section className="w-full bg-[#F8F8F8] px-6 py-20 sm:px-10 lg:py-28">
+    <section id="faq" className="w-full scroll-mt-20 bg-[#F8F8F8] px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center font-display text-3xl font-extrabold tracking-tight text-[#1a1f1c] sm:text-4xl">
           Частые вопросы

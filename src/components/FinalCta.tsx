@@ -11,7 +11,7 @@ const guarantees = [
 
 const FinalCta = () => {
   return (
-    <section className="relative w-full overflow-hidden px-6 py-24 sm:px-10 lg:py-32">
+    <section id="contact" className="relative w-full scroll-mt-20 overflow-hidden px-6 py-24 sm:px-10 lg:py-32">
       <img
         src={BG_SHED}
         alt=""

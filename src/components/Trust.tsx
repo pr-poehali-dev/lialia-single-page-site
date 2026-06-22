@@ -45,7 +45,7 @@ const reviews = [
 
 const Trust = () => {
   return (
-    <section className="w-full bg-[#23282a] px-6 py-20 sm:px-10 lg:py-28">
+    <section id="works" className="w-full scroll-mt-20 bg-[#23282a] px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
           120+ хозблоков установлено в Приморье

@@ -24,7 +24,7 @@ const specs = [
 
 const Solution = () => {
   return (
-    <section className="w-full bg-white px-6 py-20 sm:px-10 lg:py-28">
+    <section id="product" className="w-full scroll-mt-20 bg-white px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
           <div className="relative rounded-3xl bg-[#F5F5F5] p-6 sm:p-10">
