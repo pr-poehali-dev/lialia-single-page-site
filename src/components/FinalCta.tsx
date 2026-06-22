@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import { MAX_LINK } from "@/lib/links";
 
 const BG_SHED =
   "https://cdn.poehali.dev/projects/02fdc90d-5e05-4c2a-a6cc-3ec776580311/files/bdb1e0b5-c61d-4a85-9397-2a8b7df378e4.jpg";
@@ -25,14 +26,19 @@ const FinalCta = () => {
           Узнайте стоимость за 2 часа — без звонков
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-gray-300">
-          Напишите «хозблок» в WhatsApp — уточним размеры и адрес, пришлём
+          Напишите «хозблок» в MAX — уточним размеры и адрес, пришлём
           точную цену с доставкой
         </p>
 
-        <button className="group mt-10 inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-9 py-5 text-lg font-bold text-white shadow-xl shadow-[#25D366]/25 transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#25D366]/40">
+        <a
+          href={MAX_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mt-10 inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-9 py-5 text-lg font-bold text-white shadow-xl shadow-[#25D366]/25 transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-[#25D366]/40"
+        >
           <Icon name="MessageCircle" size={24} />
-          Написать в WhatsApp
-        </button>
+          Написать в MAX
+        </a>
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-8">
           {guarantees.map((g) => (

@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import { MAX_LINK } from "@/lib/links";
 
 const GRAY_SHED =
   "https://cdn.poehali.dev/projects/02fdc90d-5e05-4c2a-a6cc-3ec776580311/files/1a037895-b7f9-4e4f-91aa-834fe91eea72.jpg";
@@ -79,15 +80,20 @@ const Colors = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30">
+          <a
+            href={MAX_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+          >
             <Icon name="MessageCircle" size={20} />
-            Хочу другой цвет — уточнить в WhatsApp
+            Хочу другой цвет — уточнить в MAX
             <Icon
               name="ArrowRight"
               size={20}
               className="transition-transform group-hover:translate-x-1"
             />
-          </button>
+          </a>
         </div>
       </div>
     </section>

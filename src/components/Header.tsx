@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
+import { MAX_LINK } from "@/lib/links";
 
 const navLinks = [
   { href: "#product", label: "Хозблок" },
@@ -37,7 +38,9 @@ const Header = () => {
         </nav>
 
         <a
-          href="#contact"
+          href={MAX_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-sm font-bold text-brand-foreground transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand/25 lg:inline-flex"
         >
           <Icon name="MessageCircle" size={16} />
@@ -67,7 +70,9 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href={MAX_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3.5 text-base font-bold text-brand-foreground"
             >

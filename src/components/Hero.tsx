@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import { MAX_LINK } from "@/lib/links";
 
 const SHED_IMG =
   "https://cdn.poehali.dev/projects/02fdc90d-5e05-4c2a-a6cc-3ec776580311/files/1a037895-b7f9-4e4f-91aa-834fe91eea72.jpg";
@@ -28,7 +29,12 @@ const Hero = () => {
           </p>
 
           <div className="mt-8">
-            <button className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30">
+            <a
+              href={MAX_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+            >
               Узнать стоимость
               <Icon
                 name="MessageCircle"
@@ -36,9 +42,9 @@ const Hero = () => {
                 className="transition-transform group-hover:translate-x-1"
               />
               <span className="rounded-md bg-white/15 px-2 py-0.5 text-xs">
-                WhatsApp
+                MAX
               </span>
-            </button>
+            </a>
             <p className="mt-3 text-sm text-gray-400">
               Ответим в течение 2 часов. Без звонков.
             </p>

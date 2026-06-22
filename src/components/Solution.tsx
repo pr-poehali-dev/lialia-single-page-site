@@ -1,4 +1,5 @@
 import Icon from "@/components/ui/icon";
+import { MAX_LINK } from "@/lib/links";
 
 const SHED_RENDER =
   "https://cdn.poehali.dev/projects/02fdc90d-5e05-4c2a-a6cc-3ec776580311/files/c486d09f-f82c-44a1-9962-e716796316f7.jpg";
@@ -94,7 +95,12 @@ const Solution = () => {
             ))}
           </dl>
 
-          <button className="group mt-8 inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30">
+          <a
+            href={MAX_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-8 inline-flex items-center gap-3 rounded-xl bg-brand px-7 py-4 text-base font-bold text-brand-foreground shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30"
+          >
             Хочу такой
             <Icon
               name="MessageCircle"
@@ -102,9 +108,9 @@ const Solution = () => {
               className="transition-transform group-hover:translate-x-1"
             />
             <span className="rounded-md bg-white/15 px-2 py-0.5 text-xs">
-              WhatsApp
+              MAX
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
